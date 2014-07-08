@@ -64,12 +64,11 @@
     ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
     NSTimeZone *tz;
     NSDate *date = [formatter dateFromString:dateString timeZone:&tz];
+
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
 
-    if (tz) {
-        [gregorian setTimeZone:tz];
-    }
+    if (tz) [gregorian setTimeZone:tz];
 
     unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSTimeZoneCalendarUnit;
     NSDateComponents *components = [gregorian components:unitFlags fromDate:date];
@@ -81,7 +80,7 @@
     [_labelMinute setText:[@([components minute]) stringValue]];
     [_labelSecond  setText:[@([components second]) stringValue]];
 
-    tz = [components timeZone];
     [_labelTZ setText:[[tz name] stringByAppendingFormat:@"(%@)", [tz abbreviation]]];
 }
+
 @end
