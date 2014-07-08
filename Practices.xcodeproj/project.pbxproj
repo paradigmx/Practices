@@ -23,6 +23,7 @@
 		B5736546196BE9FA00BB1404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5736544196BE9FA00BB1404 /* InfoPlist.strings */; };
 		B5736548196BE9FA00BB1404 /* PracticesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5736547196BE9FA00BB1404 /* PracticesTests.m */; };
 		B5736554196BEA3F00BB1404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5736553196BEA3F00BB1404 /* Main.storyboard */; };
+		B58C94BB196C41DC00ED53B8 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B58C94BA196C41DC00ED53B8 /* ISO8601DateFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		B5736545196BE9FA00BB1404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5736547196BE9FA00BB1404 /* PracticesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticesTests.m; sourceTree = "<group>"; };
 		B5736553196BEA3F00BB1404 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B58C94B9196C41DC00ED53B8 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		B58C94BA196C41DC00ED53B8 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		B5736516196BE9FA00BB1404 = {
 			isa = PBXGroup;
 			children = (
+				B58C94B8196C41DC00ED53B8 /* ThirdParty */,
 				B5736528196BE9FA00BB1404 /* Practices */,
 				B5736541196BE9FA00BB1404 /* PracticesTests */,
 				B5736521196BE9FA00BB1404 /* Frameworks */,
@@ -160,6 +164,15 @@
 				B5736544196BE9FA00BB1404 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B58C94B8196C41DC00ED53B8 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				B58C94B9196C41DC00ED53B8 /* ISO8601DateFormatter.h */,
+				B58C94BA196C41DC00ED53B8 /* ISO8601DateFormatter.m */,
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5636595196BF050003888ED /* ISO8601ViewController.m in Sources */,
+				B58C94BB196C41DC00ED53B8 /* ISO8601DateFormatter.m in Sources */,
 				B5736533196BE9FA00BB1404 /* AppDelegate.m in Sources */,
 				B5636598196BF05E003888ED /* CharCountViewController.m in Sources */,
 				B563659B196BF069003888ED /* SuperPrimeViewController.m in Sources */,
@@ -379,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Practices/Practices-Prefix.pch";
 				INFOPLIST_FILE = "Practices/Practices-Info.plist";
@@ -392,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Practices/Practices-Prefix.pch";
 				INFOPLIST_FILE = "Practices/Practices-Info.plist";
