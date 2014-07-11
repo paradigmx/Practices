@@ -59,6 +59,8 @@
 */
 
 - (IBAction)parse:(id)sender {
+    [self.view endEditing:YES];
+
     NSString *dateString = [[_dateTextField text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 
     ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
