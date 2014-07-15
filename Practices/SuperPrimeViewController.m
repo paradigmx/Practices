@@ -8,8 +8,12 @@
 
 #import "SuperPrimeViewController.h"
 
-@interface SuperPrimeViewController ()
+#include <primesieve.h>
 
+@interface SuperPrimeViewController ()
+- (IBAction)compute:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextView *outputTextView;
 @end
 
 @implementation SuperPrimeViewController
@@ -18,7 +22,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -26,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +49,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)compute:(id)sender {
+    primesieve_iterator pi;
+    primesieve_init(&pi);
+    uint64_t sum = 0;
+    uint64_t prime = 0;
+
+    // iterate over the primes below 10^10
+    while ((prime = primesieve_next_prime(&pi)) < 10000000000ull)
+        sum += prime;
+    primesieve_free_iterator(&pi);
+
+    NSString *output = [NSString stringWithFormat:@"Sum of the primes below 10^10 = %llu\n", sum];
+
+    [_outputTextView setText:output];
+}
 
 @end
