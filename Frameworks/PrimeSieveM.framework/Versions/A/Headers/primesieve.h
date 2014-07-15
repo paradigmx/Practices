@@ -21,7 +21,7 @@
 #include <stdint.h>
 #include <stddef.h>
 
-#include "primesieve/primesieve_iterator.h"
+#include "primesieve_iterator.h"
 
 /** primesieve functions return PRIMESIEVE_ERROR
  *  (UINT64_MAX) if any error occurs.

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B503630A197410AF007F5DF4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5036309197410AF007F5DF4 /* libstdc++.dylib */; };
-		B50D6A131975583400A347DA /* libprimesieve.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B50D6A121975583400A347DA /* libprimesieve.a */; };
+		B50D6A251975689E00A347DA /* PrimeSieveM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50D6A241975689E00A347DA /* PrimeSieveM.framework */; };
+		B50D6A29197568E100A347DA /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B50D6A28197568E100A347DA /* ISO8601DateFormatter.m */; };
 		B5636595196BF050003888ED /* ISO8601ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5636594196BF050003888ED /* ISO8601ViewController.m */; };
 		B5636598196BF05E003888ED /* CharCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5636597196BF05E003888ED /* CharCountViewController.m */; };
 		B563659B196BF069003888ED /* SuperPrimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B563659A196BF069003888ED /* SuperPrimeViewController.m */; };
@@ -19,55 +20,14 @@
 		B573652F196BE9FA00BB1404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B573652E196BE9FA00BB1404 /* main.m */; };
 		B5736533196BE9FA00BB1404 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5736532196BE9FA00BB1404 /* AppDelegate.m */; };
 		B5736535196BE9FA00BB1404 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5736534196BE9FA00BB1404 /* Images.xcassets */; };
-		B573653C196BE9FA00BB1404 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B573653B196BE9FA00BB1404 /* XCTest.framework */; };
-		B573653D196BE9FA00BB1404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5736522196BE9FA00BB1404 /* Foundation.framework */; };
-		B573653E196BE9FA00BB1404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5736526196BE9FA00BB1404 /* UIKit.framework */; };
-		B5736546196BE9FA00BB1404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5736544196BE9FA00BB1404 /* InfoPlist.strings */; };
-		B5736548196BE9FA00BB1404 /* PracticesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5736547196BE9FA00BB1404 /* PracticesTests.m */; };
 		B5736554196BEA3F00BB1404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5736553196BEA3F00BB1404 /* Main.storyboard */; };
-		B58C94BB196C41DC00ED53B8 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B58C94BA196C41DC00ED53B8 /* ISO8601DateFormatter.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B573653F196BE9FA00BB1404 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5736517196BE9FA00BB1404 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B573651E196BE9FA00BB1404;
-			remoteInfo = Practices;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B5036309197410AF007F5DF4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		B50D69F71975580D00A347DA /* bits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bits.hpp; sourceTree = "<group>"; };
-		B50D69F81975580D00A347DA /* Callback.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Callback.hpp; sourceTree = "<group>"; };
-		B50D69F91975580D00A347DA /* callback_t.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = callback_t.hpp; sourceTree = "<group>"; };
-		B50D69FA1975580D00A347DA /* cancel_callback.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cancel_callback.hpp; sourceTree = "<group>"; };
-		B50D69FB1975580D00A347DA /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
-		B50D69FC1975580D00A347DA /* EratBig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EratBig.hpp; sourceTree = "<group>"; };
-		B50D69FD1975580D00A347DA /* EratMedium.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EratMedium.hpp; sourceTree = "<group>"; };
-		B50D69FE1975580D00A347DA /* EratSmall.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EratSmall.hpp; sourceTree = "<group>"; };
-		B50D69FF1975580D00A347DA /* iterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iterator.hpp; sourceTree = "<group>"; };
-		B50D6A001975580D00A347DA /* littleendian_cast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = littleendian_cast.hpp; sourceTree = "<group>"; };
-		B50D6A011975580D00A347DA /* ParallelPrimeSieve-lock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "ParallelPrimeSieve-lock.hpp"; sourceTree = "<group>"; };
-		B50D6A021975580D00A347DA /* ParallelPrimeSieve.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParallelPrimeSieve.hpp; sourceTree = "<group>"; };
-		B50D6A031975580D00A347DA /* pmath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pmath.hpp; sourceTree = "<group>"; };
-		B50D6A041975580D00A347DA /* PreSieve.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PreSieve.hpp; sourceTree = "<group>"; };
-		B50D6A051975580D00A347DA /* PrimeFinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PrimeFinder.hpp; sourceTree = "<group>"; };
-		B50D6A061975580D00A347DA /* PrimeGenerator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PrimeGenerator.hpp; sourceTree = "<group>"; };
-		B50D6A071975580D00A347DA /* PrimeSieve-lock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "PrimeSieve-lock.hpp"; sourceTree = "<group>"; };
-		B50D6A081975580D00A347DA /* PrimeSieve.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PrimeSieve.hpp; sourceTree = "<group>"; };
-		B50D6A091975580D00A347DA /* primesieve_error.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = primesieve_error.hpp; sourceTree = "<group>"; };
-		B50D6A0A1975580D00A347DA /* primesieve_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primesieve_iterator.h; sourceTree = "<group>"; };
-		B50D6A0B1975580D00A347DA /* PushBackPrimes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PushBackPrimes.hpp; sourceTree = "<group>"; };
-		B50D6A0C1975580D00A347DA /* SieveOfEratosthenes-inline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "SieveOfEratosthenes-inline.hpp"; sourceTree = "<group>"; };
-		B50D6A0D1975580D00A347DA /* SieveOfEratosthenes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SieveOfEratosthenes.hpp; sourceTree = "<group>"; };
-		B50D6A0E1975580D00A347DA /* toString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = toString.hpp; sourceTree = "<group>"; };
-		B50D6A0F1975580D00A347DA /* WheelFactorization.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WheelFactorization.hpp; sourceTree = "<group>"; };
-		B50D6A101975580D00A347DA /* primesieve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primesieve.h; sourceTree = "<group>"; };
-		B50D6A111975580D00A347DA /* primesieve.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = primesieve.hpp; sourceTree = "<group>"; };
-		B50D6A121975583400A347DA /* libprimesieve.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprimesieve.a; path = ThirdParty/libprimesieve.a; sourceTree = "<group>"; };
+		B50D6A241975689E00A347DA /* PrimeSieveM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PrimeSieveM.framework; path = Frameworks/PrimeSieveM.framework; sourceTree = "<group>"; };
+		B50D6A27197568E100A347DA /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		B50D6A28197568E100A347DA /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
 		B5636593196BF050003888ED /* ISO8601ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601ViewController.h; sourceTree = "<group>"; };
 		B5636594196BF050003888ED /* ISO8601ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601ViewController.m; sourceTree = "<group>"; };
 		B5636596196BF05E003888ED /* CharCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharCountViewController.h; sourceTree = "<group>"; };
@@ -85,14 +45,7 @@
 		B5736531196BE9FA00BB1404 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5736532196BE9FA00BB1404 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5736534196BE9FA00BB1404 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B573653A196BE9FA00BB1404 /* PracticesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B573653B196BE9FA00BB1404 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B5736543196BE9FA00BB1404 /* PracticesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PracticesTests-Info.plist"; sourceTree = "<group>"; };
-		B5736545196BE9FA00BB1404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B5736547196BE9FA00BB1404 /* PracticesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticesTests.m; sourceTree = "<group>"; };
 		B5736553196BEA3F00BB1404 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B58C94B9196C41DC00ED53B8 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
-		B58C94BA196C41DC00ED53B8 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,75 +54,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B503630A197410AF007F5DF4 /* libstdc++.dylib in Frameworks */,
-				B50D6A131975583400A347DA /* libprimesieve.a in Frameworks */,
+				B50D6A251975689E00A347DA /* PrimeSieveM.framework in Frameworks */,
 				B5736525196BE9FA00BB1404 /* CoreGraphics.framework in Frameworks */,
 				B5736527196BE9FA00BB1404 /* UIKit.framework in Frameworks */,
 				B5736523196BE9FA00BB1404 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5736537196BE9FA00BB1404 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B573653C196BE9FA00BB1404 /* XCTest.framework in Frameworks */,
-				B573653E196BE9FA00BB1404 /* UIKit.framework in Frameworks */,
-				B573653D196BE9FA00BB1404 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B50D69F51975580D00A347DA /* Include */ = {
+		B50D6A26197568E100A347DA /* ISO8601DateFormatter */ = {
 			isa = PBXGroup;
 			children = (
-				B50D69F61975580D00A347DA /* primesieve */,
-				B50D6A101975580D00A347DA /* primesieve.h */,
-				B50D6A111975580D00A347DA /* primesieve.hpp */,
+				B50D6A27197568E100A347DA /* ISO8601DateFormatter.h */,
+				B50D6A28197568E100A347DA /* ISO8601DateFormatter.m */,
 			);
-			path = Include;
-			sourceTree = "<group>";
-		};
-		B50D69F61975580D00A347DA /* primesieve */ = {
-			isa = PBXGroup;
-			children = (
-				B50D69F71975580D00A347DA /* bits.hpp */,
-				B50D69F81975580D00A347DA /* Callback.hpp */,
-				B50D69F91975580D00A347DA /* callback_t.hpp */,
-				B50D69FA1975580D00A347DA /* cancel_callback.hpp */,
-				B50D69FB1975580D00A347DA /* config.hpp */,
-				B50D69FC1975580D00A347DA /* EratBig.hpp */,
-				B50D69FD1975580D00A347DA /* EratMedium.hpp */,
-				B50D69FE1975580D00A347DA /* EratSmall.hpp */,
-				B50D69FF1975580D00A347DA /* iterator.hpp */,
-				B50D6A001975580D00A347DA /* littleendian_cast.hpp */,
-				B50D6A011975580D00A347DA /* ParallelPrimeSieve-lock.hpp */,
-				B50D6A021975580D00A347DA /* ParallelPrimeSieve.hpp */,
-				B50D6A031975580D00A347DA /* pmath.hpp */,
-				B50D6A041975580D00A347DA /* PreSieve.hpp */,
-				B50D6A051975580D00A347DA /* PrimeFinder.hpp */,
-				B50D6A061975580D00A347DA /* PrimeGenerator.hpp */,
-				B50D6A071975580D00A347DA /* PrimeSieve-lock.hpp */,
-				B50D6A081975580D00A347DA /* PrimeSieve.hpp */,
-				B50D6A091975580D00A347DA /* primesieve_error.hpp */,
-				B50D6A0A1975580D00A347DA /* primesieve_iterator.h */,
-				B50D6A0B1975580D00A347DA /* PushBackPrimes.hpp */,
-				B50D6A0C1975580D00A347DA /* SieveOfEratosthenes-inline.hpp */,
-				B50D6A0D1975580D00A347DA /* SieveOfEratosthenes.hpp */,
-				B50D6A0E1975580D00A347DA /* toString.hpp */,
-				B50D6A0F1975580D00A347DA /* WheelFactorization.hpp */,
-			);
-			path = primesieve;
+			path = ISO8601DateFormatter;
 			sourceTree = "<group>";
 		};
 		B5736516196BE9FA00BB1404 = {
 			isa = PBXGroup;
 			children = (
-				B50D69F51975580D00A347DA /* Include */,
-				B58C94B8196C41DC00ED53B8 /* ThirdParty */,
+				B50D6A26197568E100A347DA /* ISO8601DateFormatter */,
 				B5736528196BE9FA00BB1404 /* Practices */,
-				B5736541196BE9FA00BB1404 /* PracticesTests */,
 				B5736521196BE9FA00BB1404 /* Frameworks */,
 				B5736520196BE9FA00BB1404 /* Products */,
 			);
@@ -179,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				B573651F196BE9FA00BB1404 /* Practices.app */,
-				B573653A196BE9FA00BB1404 /* PracticesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,12 +94,11 @@
 		B5736521196BE9FA00BB1404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B50D6A241975689E00A347DA /* PrimeSieveM.framework */,
 				B5036309197410AF007F5DF4 /* libstdc++.dylib */,
-				B50D6A121975583400A347DA /* libprimesieve.a */,
 				B5736522196BE9FA00BB1404 /* Foundation.framework */,
 				B5736524196BE9FA00BB1404 /* CoreGraphics.framework */,
 				B5736526196BE9FA00BB1404 /* UIKit.framework */,
-				B573653B196BE9FA00BB1404 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,33 +132,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5736541196BE9FA00BB1404 /* PracticesTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5736547196BE9FA00BB1404 /* PracticesTests.m */,
-				B5736542196BE9FA00BB1404 /* Supporting Files */,
-			);
-			path = PracticesTests;
-			sourceTree = "<group>";
-		};
-		B5736542196BE9FA00BB1404 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5736543196BE9FA00BB1404 /* PracticesTests-Info.plist */,
-				B5736544196BE9FA00BB1404 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B58C94B8196C41DC00ED53B8 /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				B58C94B9196C41DC00ED53B8 /* ISO8601DateFormatter.h */,
-				B58C94BA196C41DC00ED53B8 /* ISO8601DateFormatter.m */,
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,24 +152,6 @@
 			productReference = B573651F196BE9FA00BB1404 /* Practices.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5736539196BE9FA00BB1404 /* PracticesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B573654E196BE9FA00BB1404 /* Build configuration list for PBXNativeTarget "PracticesTests" */;
-			buildPhases = (
-				B5736536196BE9FA00BB1404 /* Sources */,
-				B5736537196BE9FA00BB1404 /* Frameworks */,
-				B5736538196BE9FA00BB1404 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5736540196BE9FA00BB1404 /* PBXTargetDependency */,
-			);
-			name = PracticesTests;
-			productName = PracticesTests;
-			productReference = B573653A196BE9FA00BB1404 /* PracticesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -299,11 +160,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Paradigm X";
-				TargetAttributes = {
-					B5736539196BE9FA00BB1404 = {
-						TestTargetID = B573651E196BE9FA00BB1404;
-					};
-				};
 			};
 			buildConfigurationList = B573651A196BE9FA00BB1404 /* Build configuration list for PBXProject "Practices" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -318,7 +174,6 @@
 			projectRoot = "";
 			targets = (
 				B573651E196BE9FA00BB1404 /* Practices */,
-				B5736539196BE9FA00BB1404 /* PracticesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,14 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5736538196BE9FA00BB1404 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5736546196BE9FA00BB1404 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -350,45 +197,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5636595196BF050003888ED /* ISO8601ViewController.m in Sources */,
-				B58C94BB196C41DC00ED53B8 /* ISO8601DateFormatter.m in Sources */,
 				B5736533196BE9FA00BB1404 /* AppDelegate.m in Sources */,
 				B5636598196BF05E003888ED /* CharCountViewController.m in Sources */,
 				B563659B196BF069003888ED /* SuperPrimeViewController.m in Sources */,
 				B573652F196BE9FA00BB1404 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5736536196BE9FA00BB1404 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5736548196BE9FA00BB1404 /* PracticesTests.m in Sources */,
+				B50D6A29197568E100A347DA /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5736540196BE9FA00BB1404 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B573651E196BE9FA00BB1404 /* Practices */;
-			targetProxy = B573653F196BE9FA00BB1404 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B573652B196BE9FA00BB1404 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B573652C196BE9FA00BB1404 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B5736544196BE9FA00BB1404 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5736545196BE9FA00BB1404 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -472,16 +295,20 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Practices/Practices-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Include/**",
 				);
 				INFOPLIST_FILE = "Practices/Practices-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ThirdParty";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -495,60 +322,24 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Practices/Practices-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Include/**",
 				);
 				INFOPLIST_FILE = "Practices/Practices-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ThirdParty";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B573654F196BE9FA00BB1404 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Practices.app/Practices";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Practices/Practices-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PracticesTests/PracticesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B5736550196BE9FA00BB1404 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Practices.app/Practices";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Practices/Practices-Prefix.pch";
-				INFOPLIST_FILE = "PracticesTests/PracticesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -569,15 +360,6 @@
 			buildConfigurations = (
 				B573654C196BE9FA00BB1404 /* Debug */,
 				B573654D196BE9FA00BB1404 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B573654E196BE9FA00BB1404 /* Build configuration list for PBXNativeTarget "PracticesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B573654F196BE9FA00BB1404 /* Debug */,
-				B5736550196BE9FA00BB1404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

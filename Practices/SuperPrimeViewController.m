@@ -8,7 +8,7 @@
 
 #import "SuperPrimeViewController.h"
 
-#include "primesieve.h"
+#include <PrimeSieveM/primesieve.h>
 
 @interface SuperPrimeViewController ()
 - (IBAction)compute:(id)sender;
