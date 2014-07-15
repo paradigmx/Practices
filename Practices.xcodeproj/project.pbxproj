@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5036308197409BA007F5DF4 /* libprimesieve.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5036307197409BA007F5DF4 /* libprimesieve.a */; };
 		B503630A197410AF007F5DF4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5036309197410AF007F5DF4 /* libstdc++.dylib */; };
+		B5122BCC1975305A0066F280 /* libprimesieve.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5122BCB1975305A0066F280 /* libprimesieve.a */; };
 		B5636595196BF050003888ED /* ISO8601ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5636594196BF050003888ED /* ISO8601ViewController.m */; };
 		B5636598196BF05E003888ED /* CharCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5636597196BF05E003888ED /* CharCountViewController.m */; };
 		B563659B196BF069003888ED /* SuperPrimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B563659A196BF069003888ED /* SuperPrimeViewController.m */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5036307197409BA007F5DF4 /* libprimesieve.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprimesieve.a; path = "../../../../Downloads/primesieve-5.3/libprimesieve.a"; sourceTree = "<group>"; };
 		B5036309197410AF007F5DF4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		B5122BCB1975305A0066F280 /* libprimesieve.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprimesieve.a; path = "../../../C:C++/primesieve/primesieve-5.3/libprimesieve.a"; sourceTree = "<group>"; };
 		B5636593196BF050003888ED /* ISO8601ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601ViewController.h; sourceTree = "<group>"; };
 		B5636594196BF050003888ED /* ISO8601ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601ViewController.m; sourceTree = "<group>"; };
 		B5636596196BF05E003888ED /* CharCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharCountViewController.h; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B503630A197410AF007F5DF4 /* libstdc++.dylib in Frameworks */,
-				B5036308197409BA007F5DF4 /* libprimesieve.a in Frameworks */,
+				B5122BCC1975305A0066F280 /* libprimesieve.a in Frameworks */,
 				B5736525196BE9FA00BB1404 /* CoreGraphics.framework in Frameworks */,
 				B5736527196BE9FA00BB1404 /* UIKit.framework in Frameworks */,
 				B5736523196BE9FA00BB1404 /* Foundation.framework in Frameworks */,
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B5036309197410AF007F5DF4 /* libstdc++.dylib */,
-				B5036307197409BA007F5DF4 /* libprimesieve.a */,
+				B5122BCB1975305A0066F280 /* libprimesieve.a */,
 				B5736522196BE9FA00BB1404 /* Foundation.framework */,
 				B5736524196BE9FA00BB1404 /* CoreGraphics.framework */,
 				B5736526196BE9FA00BB1404 /* UIKit.framework */,
@@ -399,7 +399,7 @@
 		B573654C196BE9FA00BB1404 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -411,10 +411,10 @@
 					"/usr/local/include/**",
 				);
 				INFOPLIST_FILE = "Practices/Practices-Info.plist";
-				LIBRARY_SEARCH_PATHS = "/Users/neo/Downloads/primesieve-5.3";
+				LIBRARY_SEARCH_PATHS = "/Users/neo/Code/C:C++/primesieve/primesieve-5.3";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/usr/local/include/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,7 +422,7 @@
 		B573654D196BE9FA00BB1404 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -434,10 +434,10 @@
 					"/usr/local/include/**",
 				);
 				INFOPLIST_FILE = "Practices/Practices-Info.plist";
-				LIBRARY_SEARCH_PATHS = "/Users/neo/Downloads/primesieve-5.3";
+				LIBRARY_SEARCH_PATHS = "/Users/neo/Code/C:C++/primesieve/primesieve-5.3";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/usr/local/include/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
